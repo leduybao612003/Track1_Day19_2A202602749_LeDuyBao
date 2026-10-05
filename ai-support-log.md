@@ -2,32 +2,31 @@
 
 ## 1. Thông tin người nộp
 
-- **Họ và tên:** Nguyễn Đình Anh Đức
-- **Mã học viên:** 2A202602856
+- **Họ và tên:** Lê Duy Bảo
+
+- **Mã học viên:** 2A202602749
+
 - **Tên nhóm:** BLBD
-- **Case:** AI Notes - Personal Learning Notes
-- **Phần việc cá nhân:** Option B
+
+- **Case:** Case B — AI Notes: Personal Learning Notes
+
+- **Phần việc cá nhân:** Option C
 
 ## 2. AI hỗ trợ theo hoạt động
 
 | Hoạt động | Có dùng AI? | AI hỗ trợ gì? | Tôi/nhóm quyết định gì? |
 |---|---|---|---|
-| Human–AI Design | Có | Gợi ý vai trò, giới hạn, evidence và recovery. | B chọn cơ chế AI hỏi; học viên quyết định nội dung câu trả lời |
-| Content fixture/dummy data | Có | Hỗ trợ đưa slide mẫu vào prototype và viết câu hỏi mô phỏng | Dùng cùng bộ slide làm dữ liệu bài học; không coi đó là ghi chú thật của user |
-| Mô phỏng AI output | Có | Viết các câu hỏi gợi mở theo đoạn được chọn | Gắn nhãn AI giả lập, không tuyên bố đã chạy hoặc đánh giá model thật |
-| Prototype/code | Có | Tạo và chỉnh HTML/CSS/JS, text layer và công cụ highlight | Tôi yêu cầu sửa cách chọn chữ và giới hạn quyền của AI |
-| Viết tài liệu | Có | Soạn README, mô tả prototype | Tôi đối chiếu với prototype và sửa phần không khớp |
+|OCR data và tạo Knowledge base từ slides | Có | Hỗ trợ đưa slide mẫu vào prototype và viết câu hỏi mô phỏng | Dùng cùng bộ slide làm dữ liệu bài học; không coi đó là ghi chú thật của user |
+| Mock output | Có | Tạo các content của từng component | Tạo thêm ghi chú cho interactive flow với coach, cụ thể như *Kho local trình duyệt này: coach ở nơi khác chưa thấy — cần Supabase để chia sẻ (BLOCKED).*   |
+| Prototype | Có | Tạo và chỉnh sửa các component theo ý tưởng thiết kế, chạy smoke test | Tôi yêu cầu sửa cách chọn chữ và giới hạn quyền của AI |
+| Viết tài liệu | Có | Tạo mẫu README, mô tả workflow của prototype | Tôi đối chiếu với prototype và sửa phần không khớp |
 
 ## 3. Một ví dụ AI trả lời chưa phù hợp
 
-**AI đã đề xuất:** Prototype có slide mẫu, sau đó là slide do tôi cung cấp
+**AI đã đề xuất:** Ban đầu, AI triển khai thao tác khoanh vùng trên slide tự động chuyển sang hỏi trợ giảng AI.
 
-**Vấn đề:** Slide không thể bôi đen chữ do AI đã dát phẳng thành ảnh, không có công cụ xoá highlight
+**Vấn đề:** Không phải mọi vùng được chọn đều cần AI giải thích. Học viên có thể muốn lưu thành ghi chú cá nhân hoặc gửi yêu cầu hỗ trợ cho lab coach. Hành vi tự động hỏi AI chưa phản ánh đúng ý tưởng sản phẩm của tôi.
 
-**Tôi đã sửa:** Yêu cầu không được dát phẳng PDF, làm cho mọi đoạn text trong PDF này có thể bôi đen để highlight được; bổ sung Xóa highlight trên slide và Hoàn tác
+**Tôi đã sửa:** Tôi yêu cầu AI bổ sung ba lựa chọn Lưu vào ghi chú / Hỏi trợ giảng / Yêu cầu hỗ trợ, áp dụng cho cả chọn chữ và khoanh vùng, đồng bộ với tab panel. AI đã hoàn thiện các luồng: lưu note đúng phân cấp chương/bài/slide; đưa nội dung vào câu hỏi AI mock để học viên chủ động gửi; tạo yêu cầu hỗ trợ để coach xem và trao đổi với học viên.
 
-**Bài học:** Cần cung cấp context cụ thể, tránh để AI làm sai, thiếu
-
-## 7. Reflection về AI Support
-
-AI hữu ích nhất khi giúp tôi biến ý tưởng Option B thành luồng có thể thử và sắp xếp ghi chép phiên test. Tuy nhiên, AI không thể tự biết tester đã làm gì hoặc thực sự nghĩ gì nếu tôi không cung cấp bằng chứng. Tôi phải kiểm tra prototype bằng thao tác thực tế, giữ nguyên nguồn của câu nói và tự chịu trách nhiệm về đề xuất thay đổi. Một phiên test chưa đủ để kết luận option nào tốt nhất hoặc giải pháp đã được chứng minh
+**Bài học:** AI có thể triển khai đầy đủ chức năng nhưng vẫn hiểu sai mục đích của thao tác. Tôi cần xác định rõ lựa chọn của người dùng, đích xử lý và thời điểm gửi; đồng thời kiểm tra luồng từ thao tác trên slide đến ghi chú, trợ giảng hoặc coach.
