@@ -17,7 +17,7 @@
 | Thiết bị, trình duyệt | Laptop,Chrome |
 | Thứ tự thử | A→B→C |
 | Thời gian thực tế | A: 2 phút · B: 3 phút · C: 6 phút |
-| Sự cố kỹ thuật hoặc điều làm lệch phiên |  C: chế độ toàn màn hình bị ẩn đi thanh panel lưu ghi [err](image.png) |
+| Sự cố kỹ thuật hoặc điều làm lệch phiên |  C: chế độ toàn màn hình bị ẩn đi thanh panel lưu ghi [ảnh](image.png) |
 
 ### Bối cảnh
 

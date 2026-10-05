@@ -19,9 +19,9 @@
 
 | Feedback | Người facilitate | Tester | Thứ tự A/B/C | Link |
 |---|---|---|---|---|
-| Feedback 1 | Lê Duy Bảo | Đinh Tuấn Long-học viên track 3 AI20K | A → B → C | [ref](prototype-feedback-note-ldbao.md) |
-| Feedback 2 | Vũ Quốc Bảo | Trịnh Quốc Hoàng — học viên track 2, thường ghi ý chính vào Notepad | A → B → C | [ref](prototype-feedback-note-vqbao.md) |
-| Feedback 3 | Nguyễn Đình Anh Đức | Trần Quốc Sáng — học viên track AI20K, gần đây dùng ghi chú trên VLearn | A → B → C | [ref](prototype-feedback-note-ndaduc.md) |
+| Feedback 1 | Lê Duy Bảo | Đinh Tuấn Long-học viên track 3 AI20K | A → B → C | [link](prototype-feedback-note-ldbao.md) |
+| Feedback 2 | Vũ Quốc Bảo | Trịnh Quốc Hoàng — học viên track 2, thường ghi ý chính vào Notepad | A → B → C | [link](prototype-feedback-note-vqbao.md) |
+| Feedback 3 | Nguyễn Đình Anh Đức | Trần Quốc Sáng — học viên track AI20K, gần đây dùng ghi chú trên VLearn | A → B → C | [link](prototype-feedback-note-ndaduc.md) |
 
 Cả tester thử đủ A/B/C đều ngoài nhóm.
 ---
