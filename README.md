@@ -1,10 +1,17 @@
 # Track1_Day19_2A202602856_NguyenDinhAnhDuc
 
 ## 1. Thông tin cá nhân và nhóm
-- **MHV:** 2A202602856
-- **Họ tên:** Nguyễn Đình Anh Đức
+- **MHV:** 2A202602749
+- **Họ tên:** Lê Duy Bảo
 - **Tên nhóm:** BLBD
-- **Thành viên:** Nguyễn Đình Anh Đức, Lê Duy Bảo, Vũ Quốc Bảo
+- **Thành viên:** 
+**Thành viên:**
+| STT | Họ và tên | Mã học viên |
+|---|---|---|
+| 1 | Lê Duy Bảo | 2A202602749 |
+| 2 | Nguyễn Đình Anh Đức | 2A202602856 |
+| 3 | Vũ Quốc Bảo | 2A202602829 |
+
 - **Case:** Case B — AI Notes: Personal Learning Notes
 
 ## 2. Hypothesis Problem
@@ -20,15 +27,21 @@ Chi tiết ở [three-option-design-sheet.md](three-option-design-sheet.md).
 Chi tiết ở [three-option-design-sheet.md](three-option-design-sheet.md).
 
 ## 4. Đóng góp của tôi trong nhóm
-- Phụ trách Option B - AI hỏi gợi mở, học viên tự tạo nội dung ghi chú. Thiết kế và dựng luồng tương tác: học viên bôi đen chữ trực tiếp trên slide, chọn Highlight hoặc Chưa hiểu, trả lời câu hỏi gợi mở, rồi ghép câu trả lời thành ghi chú gắn với đoạn và slide nguồn. Prototype dùng chung bộ slide mà nhóm chọn làm nội dung thử nghiệm cho A/B/C; đây là dữ liệu bài học, không phải ghi chú của người dùng được phỏng vấn.
-- Trong thiết kế Human-AI, chọn để AI hỏi theo đoạn được đánh dấu, còn học viên quyết định nội dung nào cần ghi nhớ và tự diễn giải bằng câu trả lời của mình. AI không tự bổ sung kết luận vào ghi chú. Thêm cách xem lại nguồn, sửa hoặc trả lời lại, bỏ qua câu hỏi, tẩy hoặc xóa highlight và hoàn tác để học viên có thể kiểm soát kết quả. Prototype cho phép chọn chữ trên slide qua text layer của PDF và không cần model hay API thật khi test.
-- Chuẩn bị annotation cho người facilitate và outcome task dùng chung: quan sát tester có tự tìm ra cách highlight, hiểu câu hỏi, trả lời hoặc bỏ qua, ghép ghi chú và quay về slide nguồn hay không. Sau khi thực hiện phiên test, ghi hành vi và lời nói thật vào Feedback Note, tách observation khỏi interpretation, rồi cùng nhóm đối chiếu ba phiên test để chọn một Next Change và nêu những điều vẫn chưa được chứng minh.
+- Phụ trách Option C mà cho AI soạn bản nháp, học viên kiểm tra và duyệt. Sử dụng AI để dựng prototype: tập hợp ghi chú theo chương → bài → slide, tìm kiếm, chỉnh sửa và quay lại nguồn. Học viên chọn ghi chú, yêu cầu tổng hợp, đối chiếu slide, sửa nháp rồi duyệt lưu. Dữ liệu mẫu không phải ghi chú thật của người được phỏng vấn.
+- Trong thiết kế, tách tập hợp ghi chú thông thường khỏi AI tổng hợp theo yêu cầu. Học viên quyết định lưu bản tổng hợp; ghi chú gốc vẫn được giữ. Bổ sung ba đích cho chọn chữ và khoanh vùng: Ghi chú / Trợ giảng AI / Hỗ trợ coach. AI dùng mock; trao đổi coach hiện được xác nhận trong cùng trình duyệt, chưa đồng bộ server.
+- Điều phối phiên thử A/B/C, ghi hành vi và lời nói vào Feedback Note, tách quan sát khỏi diễn giải. Đối chiếu bản deploy C về ghi chú, nguồn, tổng hợp và trao đổi coach; phân biệt kiểm tra chức năng với bằng chứng học viên có thể tự hoàn thành nhiệm vụ.
 
 ## 5. Prototype Feedback
 - Feedback Note của phiên tôi facilitate: [prototype-feedback-note.md](prototype-feedback-note.md)
 - Tổng hợp ba feedback: [group-feedback-synthesis.md](group-feedback-synthesis.md)
-- **Next Change:** Kiểm tra và sửa khả năng fullscreen, giao diện của **Option C**, rồi cho một tester khác thử lại cùng nhiệm vụ mà không hướng dẫn. Đề xuất dựa trên câu nói trực tiếp của tester về giao diện
-- **Still Unproven:** Chưa biết lỗi chọn chữ ở B có tái hiện trên trình duyệt hoặc đoạn slide khác không; tester C có tự tìm được công cụ chọn chữ nếu không được gợi ý không; tester có thực sự kiểm tra kỹ nội dung AI làm khi ôn bài thật không; và C có giúp học tốt hơn A/B hay không
+
+- Next Change: Làm rõ luồng chọn nội dung → chọn đích → tạo nháp → kiểm tra nguồn → duyệt; sửa panel bị cắt nội dung và kiểm tra lại fullscreen, chọn chữ nhiều dòng. Cho tester khác tạo bản ôn tập và tìm nguồn mà không hướng dẫn; thử coach riêng để đánh giá đúng giá trị tổng hợp của C.
+- Still Unproven: Chưa biết học viên có tự tìm công cụ, phát hiện và sửa ý sai trước khi duyệt hay không; chưa đo hiệu quả ôn tập hoặc thời gian tìm nguồn so với A/B. AI mock chưa chứng minh chất lượng model thật; coach khác thiết bị, kéo thả, sơ đồ, đồng bộ hai tab và mobile chưa được kiểm tra đầy đủ
 
 ## 6. AI Support Log
 [ai-support-log.md](ai-support-log.md)
+
+
+## 7. Reflection về AI Support
+
+ AI giúp  để hiện thực hóa các ý tưởng của Option C và chỉnh sửa prototype nhanh hơn. Tuy nhiên, AI từng hiểu sai thao tác khoanh vùng thành tự động hỏi trợ giảng, trong khi học viên cần được chọn lưu ghi chú, hỏi AI hoặc gửi hỗ trợ coach  cần mô tả rõ mục đích, quyền quyết định của người dùng và kiểm tra từng luồng thực tế.

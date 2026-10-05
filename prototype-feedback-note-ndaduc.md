@@ -1,12 +1,7 @@
 # Prototype Feedback Note
 
-**Người điều phối:** Lê Duy Bảo 
-
-**Tester:** Đinh Tuấn Long-học viên track 3 AI20K  
-
-**Case:** Case B — AI Notes: Personal Learning Notes 
-
-**Các phương án:** A / B / C
+**Người điều phối:** Nguyễn Đình Anh Đức · **Tester:** Trần Quốc Sáng - học viên AI20K  
+**Case:** AI Notes · **Các phương án:** A / B / C
 
 ## 1. Thông tin phiên
 

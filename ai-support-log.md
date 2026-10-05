@@ -17,7 +17,7 @@
 | Hoạt động | Có dùng AI? | AI hỗ trợ gì? | Tôi/nhóm quyết định gì? |
 |---|---|---|---|
 |OCR data và tạo Knowledge base từ slides | Có | Hỗ trợ đưa slide mẫu vào prototype và viết câu hỏi mô phỏng | Dùng cùng bộ slide làm dữ liệu bài học; không coi đó là ghi chú thật của user |
-| Mock output | Có | Tạo các content của từng component | Tạo thêm ghi chú cho interactive flow với coach, cụ thể như *Kho local trình duyệt này: coach ở nơi khác chưa thấy — cần Supabase để chia sẻ (BLOCKED).*   |
+| Mock output | Có | Tạo các content của từng component | Tạo thêm ghi chú cho interactive flow với coach, cụ thể như *Kho local trình duyệt này: coach ở nơi khác chưa thấy-cần Supabase để chia sẻ (BLOCKED).*   |
 | Prototype | Có | Tạo và chỉnh sửa các component theo ý tưởng thiết kế, chạy smoke test | Tôi yêu cầu sửa cách chọn chữ và giới hạn quyền của AI |
 | Viết tài liệu | Có | Tạo mẫu README, mô tả workflow của prototype | Tôi đối chiếu với prototype và sửa phần không khớp |
 

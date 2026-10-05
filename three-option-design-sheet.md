@@ -3,8 +3,11 @@
 ## 1. Thông tin chung
 
 - **Tên nhóm:** BLBD
-- **Case:** AI Notes
+
+- **Case:** Case B — AI Notes: Personal Learning Notes
+
 - **Ngày thực hiện:** 05/10/2026
+
 - **Thành viên:**
   1. Nguyễn Đình Anh Đức - 2A202602856
   2. Lê Duy Bảo - 2A202602749
